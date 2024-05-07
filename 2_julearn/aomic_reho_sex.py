@@ -63,4 +63,6 @@ to_plot["correct"] = to_plot["repeat0_p0"] == to_plot["target"]
 # %%
 sns.boxplot(data=to_plot, x="sex", hue="correct", y="eTIV")
 
+import matplotlib.pyplot as plt
+plt.savefig("bias.pdf")
 # %%
